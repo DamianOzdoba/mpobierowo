@@ -1,0 +1,99 @@
+.header {
+  margin: 0 auto;
+  height: toRem(100);
+  background-color: $color-black-opacity-5;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @include mq(lg) {
+    font-size: 0.8rem;
+    max-width: toRem(800);
+  }
+  @include mq(xl) {
+    max-width: toRem(1200);
+  }
+
+  &__title {
+    font-size: 0.8rem;
+    color: $color-white;
+    text-decoration: none;
+    text-align: center;
+
+
+    @include mq(lg) {
+      margin-left: toRem(25);
+    }
+    @include mq(xl) {
+      font-size: 1rem;
+    }
+
+    &-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      & > h1 {
+        margin: 0;
+        display: block;
+        font-weight: 500;
+      }
+
+      & > p {
+        margin: 0;
+        display: block;
+        & > a {
+          color: $color-white;
+          text-decoration: none;
+
+          &:hover {
+            transition: 0.3s;
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: toRem(100);
+    left: 0;
+    width: 100%;
+
+    &.expanded {
+      min-height: toRem(250);
+      display: flex;
+      justify-content: space-around;
+      z-index: 10;
+      background-color: $color-black-opacity-7;
+    }
+
+    @include mq(lg) {
+      display: flex;
+      flex-direction: row;
+      position: static;
+    }
+  }
+
+}
+
+.hamburger-react {
+  margin-right: toRem(20);
+  margin-left: toRem(20);
+  background-color: $color-primary;
+  border-radius: toRem(10);
+
+  @include mq(lg) {
+    display: none;
+  }
+}

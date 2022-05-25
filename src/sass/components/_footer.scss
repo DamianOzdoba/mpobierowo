@@ -1,0 +1,31 @@
+.footer {
+  margin: 0 auto;
+  height: toRem(50);
+  font-size: toRem(12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-black-opacity-5;
+
+  @include mq(lg) {
+    max-width: toRem(800);
+  }
+  @include mq(xl) {
+    max-width: toRem(1200);
+  }
+
+  &__content {
+
+    color: $color-white;
+  }
+
+  &__link {
+    margin-left: toRem(20);
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

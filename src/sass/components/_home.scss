@@ -1,0 +1,26 @@
+.home {
+  margin: 0 auto;
+  min-height: calc(100vh - 150px);
+  background-color: $color-black-opacity-5;
+
+  @include mq(lg) {
+    max-width: toRem(800);
+  }
+  @include mq(xl) {
+    max-width: toRem(1200);
+  }
+
+
+  &__carousel-container {
+    margin: 0 auto;
+
+    @include mq(lg) {
+      max-width: toRem(800);
+    }
+    @include mq(xl) {
+      max-width: toRem(1200);
+    }
+
+  }
+
+}

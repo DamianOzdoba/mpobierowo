@@ -1,0 +1,14 @@
+$font-size-base: 16;
+
+$font-path: '../../fonts/';
+
+$fonts: ('Open Sans': 'opensans-variablefont_wdthwght-webfont',
+        'Montserrat': 'montserrat-variablefont_wght-webfont');
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 993px,
+        xl: 1441px
+);

@@ -1,0 +1,21 @@
+.link {
+  color: $color-white;
+  font-size: toRem(24);
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+
+  @include mq(lg) {
+    font-size: toRem(14);
+    margin-right: toRem(40);
+  }
+  @include mq(xl) {
+    font-size: toRem(18);
+  }
+
+  &:hover {
+    transition: 0.3s;
+    color: $color-primary;
+    position: relative;
+  }
+}
