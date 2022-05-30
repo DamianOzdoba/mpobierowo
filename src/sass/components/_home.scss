@@ -10,7 +10,6 @@
     max-width: toRem(1200);
   }
 
-
   &__carousel-container {
     margin: 0 auto;
 
@@ -21,6 +20,8 @@
       max-width: toRem(1200);
     }
 
+    & li {
+      z-index: 1 !important;
+    }
   }
-
 }

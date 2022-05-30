@@ -19,12 +19,12 @@ function OfferContent() {
                 </p>
             </div>
             <p className="content__description content__description--amenities">
+                <span>Udogodnienia:</span><br/>
                 Dla dzieci: trampolina, piaskownica i&nbsp;huśtawka.<br/>
                 Blisko sklep sieciowy.<br/>
                 Bezpłatny parking na terenie obiektu - wskazana rezerwacja.<br/>
                 Bezpłatne Wi-Fi.<br/>
-                Przyjmujemy gości z małymi zwierzętami, po wcześniejszym uzgodnieniu.<br/>
-                Obowiązuje segregacja śmieci zgodna z&nbsp;wytycznymi gminy Rewal.</p>
+                Przyjmujemy gości z małymi zwierzętami, po wcześniejszym uzgodnieniu.</p>
         </div>
     );
 }

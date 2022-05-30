@@ -1,0 +1,113 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+  &__thumbnail {
+    width: toRem(200);
+    height: toRem(150);
+    border: toRem(4) solid $color-primary;
+    border-radius: toRem(10);
+    margin: toRem(24);
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    &--img {
+      margin: 0;
+      padding: 0;
+      width: toRem(200);
+      height: toRem(150);
+    }
+  }
+  &__container {
+    z-index: 5;
+    display: none;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-black-opacity-5;
+
+    &--open {
+      display: flex;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    font-size: toRem(64);
+    background-color: transparent;
+    border: none;
+    color: $color-white;
+    position: absolute;
+    right: toRem(50);
+    top: toRem(20);
+
+    &:hover {
+      cursor: pointer;
+      transition: 0.3s;
+      color: $color-primary;
+    }
+  }
+
+  &__carousel {
+    width: 100%;
+
+    @include mq(sm) {
+      max-width: toRem(575);
+    }
+
+    @include mq(md) {
+      max-width: toRem(575);
+    }
+
+    @include mq(xl) {
+      max-width: toRem(800);
+    }
+  }
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: toRem(4) solid $color-primary;
+
+  @include mq(md) {
+    flex-direction: row;
+    border-bottom: toRem(4) solid transparent;
+  }
+
+  &__content {
+    color: $color-white;
+
+  }
+
+  &__title {
+    margin: 0;
+    font-size: toRem(20);
+    font-weight: 500;
+    text-align: center;
+  }
+  &__desc {
+    margin: toRem(10);
+    text-align: center;
+
+    @include mq(md) {
+      max-width: toRem(350);
+    }
+  }
+}
+
+.slide img {
+  max-height: 100vh;
+}
