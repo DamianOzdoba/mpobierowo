@@ -35,7 +35,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     @include mq(md) {
       flex-direction: row;
@@ -133,6 +132,12 @@
     &--red {
       color: red;
     }
+    &--offer {
+      max-width: toRem(350);
+      @include mq(xl) {
+        max-width: toRem(500);
+      }
+    }
   }
 
   &__contact {
@@ -162,14 +167,15 @@
 
     & .map {
       width: 90%;
-      height: toRem(200);
+      height: toRem(250);
 
       @include mq(md) {
-        width: 100%;
+        width: toRem(400);
       }
+
       @include mq(xl) {
-        width: toRem(450);
-        height: toRem(300);
+        width: toRem(500);
+        height: toRem(350);
       }
     }
   }

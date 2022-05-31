@@ -34,7 +34,7 @@ function HomeContent() {
             <p className="content__description"><span>Obiekt jest czynny od 20 czerwca do końca
                 sierpnia.</span></p>
             <p className="content__description">Preferowany pobyt tygodniowy: od soboty do soboty
-                i&nbsp;wielokrotność.<br/> Obsługujemy Bon Turystyczny na dziecko.</p>
+                i&nbsp;wielokrotność.<br/> Realizujemy Bon Turystyczny na dziecko.</p>
             {info[0] ?
                 <>
                     <h2 className="content__title content__title--red">{info[0].title}</h2>

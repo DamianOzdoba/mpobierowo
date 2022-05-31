@@ -19,7 +19,7 @@ function GalleryContent() {
             <div className="content">
                 <h2 className="content__title">Galeria</h2>
                 <h2 className="content__title content__title--blue content__title content__title--blue--blue">
-                    Dom mniejszy. Pokoje 1, 2, 3, 4
+                    Dom mniejszy.
                 </h2>
                 <div className="thumbnail">
                     <GalleryThumbnail image={pokoj1} url="pokoj_1"/>
@@ -52,7 +52,7 @@ function GalleryContent() {
             </div>
             <div className="content">
                 <h2 className="content__title content__title--blue content__title content__title--blue--blue">
-                    Dom większy. Pokoje 5, 6, 7, 8
+                    Dom większy.
                 </h2>
                 <div className="thumbnail">
                     <GalleryThumbnail image={pokoj5} url="pokoj_5"/>
