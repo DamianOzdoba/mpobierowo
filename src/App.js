@@ -1,6 +1,6 @@
 import React from "react";
 import {Route, Routes} from 'react-router-dom';
-import main_bg from "./images/main_bg2.png";
+import main_bg_min from "./images/main_bg2-min.png";
 import Header from "./js/components/Header";
 import Home from "./js/components/Home";
 import Offer from "./js/components/Offer";
@@ -11,7 +11,7 @@ import Footer from "./js/components/Footer";
 
 function App() {
     return (
-        <div className="container" style={{backgroundImage: `url(${main_bg})`}}>
+        <div className="container" style={{backgroundImage: `url(${main_bg_min})`}}>
             <Header/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
